@@ -70,6 +70,7 @@
       {"name":"Durée (Minutes)","type":"bigint"},
       {"name":"Nombre Passager","type":"bigint"},
       {"name":"Distance (Miles)","type":"double"},
+      {"name":"Vitesse Moyenne (Milles/H)","type":"double"},
       {"name":"Code Tarif ID","type":"bigint"},
       {"name":"Zone Départ ID","type":"bigint"},
       {"name":"Zone Arrivée ID","type":"bigint"},
