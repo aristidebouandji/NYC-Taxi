@@ -1,6 +1,76 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "Fournisseur ID"
+      },
+      {
+        "d": true,
+        "name": "Date Heure Depart"
+      },
+      {
+        "d": true,
+        "name": "Date Heure Arrivée"
+      },
+      {
+        "d": true,
+        "name": "Nombre Passager"
+      },
+      {
+        "d": true,
+        "name": "Distance (Miles)"
+      },
+      {
+        "d": true,
+        "name": "Code Tarif ID"
+      },
+      {
+        "d": true,
+        "name": "Zone Départ ID"
+      },
+      {
+        "d": true,
+        "name": "Zone Arrivée ID"
+      },
+      {
+        "d": true,
+        "name": "Type Paiement"
+      },
+      {
+        "d": true,
+        "name": "Prix Course Base"
+      },
+      {
+        "d": true,
+        "name": "Supplément"
+      },
+      {
+        "d": true,
+        "name": "Montant Pourboire"
+      },
+      {
+        "d": true,
+        "name": "Montant Péages"
+      },
+      {
+        "d": true,
+        "name": "Montant Total"
+      },
+      {
+        "d": true,
+        "name": "Surcharge Congestion"
+      },
+      {
+        "d": true,
+        "name": "Frais Aéroport"
+      },
+      {
+        "d": true,
+        "name": "Frais Zone Congestion"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +100,206 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "vendorid",
+            "to": "Fournisseur ID"
+          },
+          {
+            "from": "tpep_pickup_datetime",
+            "to": "Date Heure Depart"
+          },
+          {
+            "from": "tpep_dropoff_datetime",
+            "to": "Date Heure Arrivée"
+          },
+          {
+            "from": "passenger_count",
+            "to": "Nombre Passager"
+          },
+          {
+            "from": "trip_distance",
+            "to": "Distance (Miles)"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "store_and_fwd_flag"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "ratecodeid",
+            "to": "Code Tarif ID"
+          },
+          {
+            "from": "pulocationid",
+            "to": "Zone Départ ID"
+          },
+          {
+            "from": "dolocationid",
+            "to": "Zone Arrivée ID"
+          },
+          {
+            "from": "payment_type",
+            "to": "Type Paiement"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "mta_tax"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "fare_amount",
+            "to": "Prix Course Base"
+          },
+          {
+            "from": "extra",
+            "to": "Supplément"
+          },
+          {
+            "from": "tip_amount",
+            "to": "Montant Pourboire"
+          },
+          {
+            "from": "tolls_amount",
+            "to": "Montant Péages"
+          },
+          {
+            "from": "total_amount",
+            "to": "Montant Total"
+          },
+          {
+            "from": "airport_fee",
+            "to": "Frais Aéroport"
+          },
+          {
+            "from": "cbd_congestion_fee",
+            "to": "Frais Zone Congestion"
+          },
+          {
+            "from": "congestion_surcharge",
+            "to": "Surcharge Congestion"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "improvement_surcharge"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "createdColumnCount": 2
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "Nombre Passager",
+        "keepEmptyChunks": false,
+        "limit": 0,
+        "separator": ".",
+        "outColPrefix": "Nombre Passager_",
+        "limitOutput": false,
+        "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Nombre Passager",
+          "Nombre Passager_1"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "Nombre Passager_0",
+            "to": "Nombre Passager"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -59,7 +327,48 @@
   },
   "analysisColumnData": {},
   "flagNumericValues": true,
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Code Tarif ID": 134,
+    "tpep_dropoff_datetime": 197,
+    "congestion_surcharge": 165,
+    "Type Paiement": 113,
+    "Montant Péages": 134,
+    "Date Heure Arrivée": 176,
+    "passenger_count": 134,
+    "tolls_amount": 134,
+    "trip_distance": 134,
+    "Montant Total": 134,
+    "cbd_congestion_fee": 150,
+    "ratecodeid": 134,
+    "Nombre Passager": 134,
+    "extra": 134,
+    "Frais Zone Congestion": 173,
+    "Distance (Miles)": 135,
+    "Frais Aéroport": 134,
+    "Date Heure Depart": 176,
+    "fare_amount": 134,
+    "vendorid": 100,
+    "improvement_surcharge": 173,
+    "Prix Course Base": 135,
+    "Zone Départ ID": 120,
+    "dolocationid": 105,
+    "1": 134,
+    "pulocationid": 105,
+    "store_and_fwd_flag": 150,
+    "payment_type": 105,
+    "total_amount": 134,
+    "Fournisseur ID": 120,
+    "Montant Pourboire": 143,
+    "Supplément": 134,
+    "tip_amount": 134,
+    "mta_tax": 134,
+    "Surcharge Congestion": 165,
+    "Nombre Passager_0": 143,
+    "airport_fee": 134,
+    "Zone Arrivée ID": 128,
+    "Nombre Passager_1": 143,
+    "tpep_pickup_datetime": 190
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
