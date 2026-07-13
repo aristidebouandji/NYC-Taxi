@@ -60,6 +60,10 @@
       },
       {
         "d": true,
+        "name": "Ration Pourboire (%)"
+      },
+      {
+        "d": true,
         "name": "Montant Péages"
       },
       {
@@ -458,7 +462,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "RoundProcessor",
@@ -467,6 +471,34 @@
         "places": 0,
         "columns": [
           "Vitesse Moyenne (Milles/H)"
+        ],
+        "precision": 0,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(val(\"Prix Course Base\") \u003e 0, (val(\"Montant Pourboire\")/val(\"Prix Course Base\")*100), 0)",
+        "column": "Ration Pourboire (%)",
+        "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RoundProcessor",
+      "params": {
+        "mode": "ROUND",
+        "places": 2,
+        "columns": [
+          "Ration Pourboire (%)"
         ],
         "precision": 0,
         "appliesTo": "SINGLE_COLUMN"
@@ -526,6 +558,7 @@
     "Date Heure Depart": 176,
     "fare_amount": 134,
     "vendorid": 100,
+    "Ration Pourboire (%)": 190,
     "improvement_surcharge": 173,
     "Prix Course Base": 135,
     "Zone Départ ID": 120,
