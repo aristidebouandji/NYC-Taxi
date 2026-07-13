@@ -29,8 +29,8 @@
       "id": "9c1c0250",
       "type": "kpi",
       "variant": "normal",
-      "name": "Sum of Montant Total",
-      "userEditedName": false,
+      "name": "Chiffre d\u0027Affaire de l\u0027Activité",
+      "userEditedName": true,
       "displayWithEChartsByDefault": true,
       "genericDimension0": [],
       "genericDimension1": [],
@@ -50,21 +50,23 @@
           "computeMode": "NORMAL",
           "computeModeDim": 0,
           "multiplier": "Auto",
-          "digitGrouping": "DEFAULT",
+          "decimalPlaces": 2,
+          "digitGrouping": "SPACE_POINT",
           "useParenthesesForNegativeValues": false,
           "shouldFormatInPercentage": false,
           "hideTrailingZeros": true,
           "prefix": "",
           "suffix": "",
           "showValue": true,
+          "displayLabel": "CHIFFRE D\u0027AFFIRE",
           "showDisplayLabel": true,
-          "labelPosition": "BOTTOM",
+          "labelPosition": "TOP",
           "percentile": 50.0,
           "isCustomPercentile": false,
           "kpiTextAlign": "CENTER",
           "kpiValueFontSizeMode": "RESPONSIVE",
           "kpiValueFontSize": 32,
-          "responsiveTextAreaFill": 100,
+          "responsiveTextAreaFill": 66,
           "valueTextFormatting": {
             "fontSize": 11,
             "fontColor": "#333333",
@@ -72,7 +74,7 @@
             "fontFamily": "SourceSansPro"
           },
           "labelTextFormatting": {
-            "fontSize": 15,
+            "fontSize": 24,
             "fontColor": "#333333",
             "hasBackground": false
           },
@@ -336,7 +338,111 @@
         },
         "customColors": {}
       },
-      "colorGroups": [],
+      "colorGroups": [
+        {
+          "colorGroupMode": "RULES",
+          "rules": [
+            {
+              "mode": "GREATER_OR_EQUAL_THAN",
+              "styleClass": "color-rule--orange-text",
+              "colorOptions": {
+                "singleColor": "",
+                "transparency": 0.75,
+                "colorPalette": "dku_text_background",
+                "customPalette": {
+                  "id": "__dku_custom__",
+                  "name": "Custom Palette",
+                  "colors": [],
+                  "values": [],
+                  "fixedValues": false
+                },
+                "customColors": {
+                  "customFontColor": "#FFFFFF",
+                  "customBackgroundColor": "#668DBB"
+                }
+              },
+              "conditionValue1": "1",
+              "conditionValue2": 0.0
+            },
+            {
+              "mode": "LOWER_THAN",
+              "styleClass": "color-rule--red-background",
+              "colorOptions": {
+                "singleColor": "#659a88",
+                "transparency": 0.75,
+                "colorPalette": "dku_text_background",
+                "customPalette": {
+                  "id": "__dku_custom__",
+                  "name": "Custom palette",
+                  "colors": [],
+                  "values": [],
+                  "fixedValues": false
+                },
+                "customColors": {
+                  "customFontColor": "#FFFFFF",
+                  "customBackgroundColor": "#668DBB"
+                }
+              },
+              "conditionValue1": 0.0,
+              "conditionValue2": 0.0
+            },
+            {
+              "mode": "GREATER_THAN",
+              "styleClass": "color-rule--green-background",
+              "colorOptions": {
+                "singleColor": "#659a88",
+                "transparency": 0.75,
+                "colorPalette": "dku_text_background",
+                "customPalette": {
+                  "id": "__dku_custom__",
+                  "name": "Custom palette",
+                  "colors": [],
+                  "values": [],
+                  "fixedValues": false
+                },
+                "customColors": {
+                  "customFontColor": "#FFFFFF",
+                  "customBackgroundColor": "#668DBB"
+                }
+              },
+              "conditionValue1": "3",
+              "conditionValue2": 0.0
+            }
+          ],
+          "appliedColumns": [
+            {
+              "column": "Montant Total",
+              "type": "NUMERICAL",
+              "function": "SUM",
+              "percentile": 50.0
+            }
+          ],
+          "colorOptions": {
+            "ccScaleMode": "NORMAL",
+            "paletteType": "CONTINUOUS",
+            "quantizationMode": "NONE",
+            "numQuantizeSteps": 5,
+            "paletteMiddleValue": 0.0,
+            "heatDensityMapIntensity": 0.0,
+            "heatDensityMapRadius": 0.0,
+            "singleColor": "",
+            "transparency": 0.75,
+            "colorPalette": "dku_text_background",
+            "customPalette": {
+              "id": "__dku_custom__",
+              "name": "Custom Palette",
+              "colors": [],
+              "values": [],
+              "fixedValues": false
+            },
+            "customColors": {
+              "customFontColor": "#FFFFFF",
+              "customBackgroundColor": "#668DBB"
+            }
+          },
+          "colorMeasure": []
+        }
+      ],
       "bubblesOptions": {
         "defaultRadius": 5.0,
         "singleShape": "FILLED_CIRCLE"
