@@ -55,7 +55,7 @@
           "useParenthesesForNegativeValues": false,
           "shouldFormatInPercentage": false,
           "hideTrailingZeros": true,
-          "prefix": "",
+          "prefix": "$",
           "suffix": "",
           "showValue": true,
           "displayLabel": "CHIFFRE D\u0027AFFIRE",
