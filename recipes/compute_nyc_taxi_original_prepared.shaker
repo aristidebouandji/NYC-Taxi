@@ -298,6 +298,132 @@
         ]
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "Nombre Passager"
+        ],
+        "values": [
+          "0"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "REMOVE_ROW",
+        "appliesTo": "SINGLE_COLUMN",
+        "exclude": false,
+        "processNullOrEmptyValues": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "Distance (Miles)"
+        ],
+        "values": [
+          "0.0"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "REMOVE_ROW",
+        "appliesTo": "SINGLE_COLUMN",
+        "exclude": false,
+        "processNullOrEmptyValues": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "createdColumnCount": 2
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "Code Tarif ID",
+        "keepEmptyChunks": false,
+        "limit": 0,
+        "separator": ".",
+        "outColPrefix": "Code Tarif ID_",
+        "limitOutput": false,
+        "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Code Tarif ID",
+          "Code Tarif ID_1"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "Code Tarif ID_0",
+            "to": "Code Tarif ID"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnNumericalRange",
+      "params": {
+        "min": 0.0,
+        "booleanMode": "AND",
+        "columns": [
+          "Prix Course Base"
+        ],
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN",
+        "includeEmptyValues": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RemoveRowsOnEmpty",
+      "params": {
+        "columns": [
+          "Nombre Passager"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -342,9 +468,11 @@
     "ratecodeid": 134,
     "Nombre Passager": 134,
     "extra": 134,
+    "Code Tarif ID_0": 128,
     "Frais Zone Congestion": 173,
     "Distance (Miles)": 135,
     "Frais Aéroport": 134,
+    "Code Tarif ID_1": 128,
     "Date Heure Depart": 176,
     "fare_amount": 134,
     "vendorid": 100,
