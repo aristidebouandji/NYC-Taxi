@@ -54,6 +54,8 @@
             "measureIdx": 0,
             "label": "Average of Montant Pourboire, descending"
           },
+          "prefix": "",
+          "suffix": "",
           "multiplier": "Auto",
           "hideTrailingZeros": true,
           "digitGrouping": "DEFAULT",
