@@ -69,7 +69,7 @@
       {"name":"Date Heure Arrivée","type":"datetimenotz"},
       {"name":"Nombre Passager","type":"bigint"},
       {"name":"Distance (Miles)","type":"double"},
-      {"name":"Code Tarif ID","type":"double"},
+      {"name":"Code Tarif ID","type":"bigint"},
       {"name":"Zone Départ ID","type":"bigint"},
       {"name":"Zone Arrivée ID","type":"bigint"},
       {"name":"Type Paiement","type":"bigint"},
