@@ -15,7 +15,7 @@
           "enabled": false,
           "rules": []
         },
-        "samplingMethod": "HEAD_SEQUENTIAL",
+        "samplingMethod": "FULL",
         "maxRecords": 10000,
         "targetRatio": 0.02,
         "ascending": true,
@@ -23,20 +23,75 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "_refreshTrigger": 1783979011558
     },
     "def": {
       "id": "9c1c0250",
-      "type": "grouped_columns",
+      "type": "kpi",
       "variant": "normal",
-      "name": "Chart",
+      "name": "Sum of Montant Total",
       "userEditedName": false,
       "displayWithEChartsByDefault": true,
       "genericDimension0": [],
       "genericDimension1": [],
       "facetDimension": [],
       "animationDimension": [],
-      "genericMeasures": [],
+      "genericMeasures": [
+        {
+          "column": "Montant Total",
+          "function": "SUM",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "isUnaggregated": false,
+          "uaComputeMode": "STACK",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "multiplier": "Auto",
+          "digitGrouping": "DEFAULT",
+          "useParenthesesForNegativeValues": false,
+          "shouldFormatInPercentage": false,
+          "hideTrailingZeros": true,
+          "prefix": "",
+          "suffix": "",
+          "showValue": true,
+          "showDisplayLabel": true,
+          "labelPosition": "BOTTOM",
+          "percentile": 50.0,
+          "isCustomPercentile": false,
+          "kpiTextAlign": "CENTER",
+          "kpiValueFontSizeMode": "RESPONSIVE",
+          "kpiValueFontSize": 32,
+          "responsiveTextAreaFill": 100,
+          "valueTextFormatting": {
+            "fontSize": 11,
+            "fontColor": "#333333",
+            "hasBackground": false,
+            "fontFamily": "SourceSansPro"
+          },
+          "labelTextFormatting": {
+            "fontSize": 15,
+            "fontColor": "#333333",
+            "hasBackground": false
+          },
+          "valuesInChartDisplayOptions": {
+            "displayValues": true,
+            "textFormatting": {
+              "fontSize": 11,
+              "fontColor": "AUTO",
+              "hasBackground": false,
+              "backgroundColor": "#D9D9D9BF"
+            },
+            "addDetails": false,
+            "additionalMeasures": [],
+            "placementMode": "AUTO",
+            "spacing": 12
+          },
+          "colorRules": []
+        }
+      ],
       "genericHierarchyDimension": [],
       "yHierarchyDimension": [],
       "xHierarchyDimension": [],
@@ -86,6 +141,7 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
+      "filters": [],
       "xAxisFormatting": {
         "displayAxis": true,
         "showAxisTitle": true,
@@ -115,6 +171,7 @@
           "mode": "INTERVAL"
         },
         "customExtent": {
+          "editMode": "AUTO",
           "manualExtent": [
             null,
             null
@@ -154,6 +211,7 @@
             "mode": "INTERVAL"
           },
           "customExtent": {
+            "editMode": "AUTO",
             "manualExtent": [
               null,
               null
@@ -192,6 +250,7 @@
             "mode": "INTERVAL"
           },
           "customExtent": {
+            "editMode": "AUTO",
             "manualExtent": [
               null,
               null
@@ -256,7 +315,7 @@
       "multiTooltips": false,
       "animationFrameDuration": 3000,
       "animationRepeat": true,
-      "colorMode": "UNIQUE_SCALE",
+      "colorMode": "COLOR_GROUPS",
       "colorOptions": {
         "ccScaleMode": "NORMAL",
         "paletteType": "CONTINUOUS",
@@ -277,10 +336,12 @@
         },
         "customColors": {}
       },
+      "colorGroups": [],
       "bubblesOptions": {
         "defaultRadius": 5.0,
         "singleShape": "FILLED_CIRCLE"
       },
+      "computeMode": "NORMAL",
       "xAxisMode": "NORMAL",
       "yAxisMode": "NORMAL",
       "pieOptions": {
@@ -527,7 +588,9 @@
         },
         "horizontal": {
           "show": false,
-          "displayAxis": {},
+          "displayAxis": {
+            "type": "LEFT_Y_AXIS"
+          },
           "lineFormatting": {
             "type": "FILLED",
             "color": "#d9d9d9",
