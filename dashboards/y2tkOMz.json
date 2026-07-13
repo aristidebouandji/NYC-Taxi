@@ -9,7 +9,7 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 8,
+              "width": 11,
               "height": 7
             },
             "clickAction": "DO_NOTHING",
@@ -39,6 +39,7 @@
             },
             "titleOptions": {
               "showTitle": "YES",
+              "title": "Chiffre d\u0027Affaire de l\u0027Activité",
               "fontColor": "#000000",
               "fontSize": 13
             },
@@ -55,7 +56,7 @@
             "box": {
               "top": 7,
               "left": 0,
-              "width": 14,
+              "width": 15,
               "height": 12
             },
             "clickAction": "DO_NOTHING",
@@ -85,6 +86,7 @@
             },
             "titleOptions": {
               "showTitle": "YES",
+              "title": "Moyenne Pourboire en Semaine",
               "fontColor": "#000000",
               "fontSize": 13
             },
