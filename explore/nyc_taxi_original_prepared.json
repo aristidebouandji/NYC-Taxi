@@ -18,11 +18,19 @@
           "d": true
         },
         {
+          "name": "Durée (Minutes)",
+          "d": true
+        },
+        {
           "name": "Nombre Passager",
           "d": true
         },
         {
           "name": "Distance (Miles)",
+          "d": true
+        },
+        {
+          "name": "Vitesse Moyenne (Milles/H)",
           "d": true
         },
         {
@@ -51,6 +59,10 @@
         },
         {
           "name": "Montant Pourboire",
+          "d": true
+        },
+        {
+          "name": "Ration Pourboire (%)",
           "d": true
         },
         {
@@ -93,7 +105,10 @@
       "Montant Total": 134,
       "Surcharge Congestion": 165,
       "Frais Aéroport": 134,
-      "Frais Zone Congestion": 173
+      "Frais Zone Congestion": 173,
+      "Durée (Minutes)": 128,
+      "Vitesse Moyenne (Milles/H)": 189,
+      "Ration Pourboire (%)": 165
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
