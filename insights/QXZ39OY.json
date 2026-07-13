@@ -81,6 +81,7 @@
           "computeMode": "NORMAL",
           "computeModeDim": 0,
           "multiplier": "Auto",
+          "decimalPlaces": 2,
           "digitGrouping": "DEFAULT",
           "useParenthesesForNegativeValues": false,
           "shouldFormatInPercentage": false,
@@ -176,7 +177,7 @@
       "filters": [],
       "xAxisFormatting": {
         "displayAxis": true,
-        "showAxisTitle": true,
+        "showAxisTitle": false,
         "axisTitleFormatting": {
           "fontSize": 15,
           "fontColor": "#333333",
@@ -194,9 +195,8 @@
           },
           "axisTicksFormatting": {
             "fontSize": 12,
-            "fontColor": "#333333",
-            "hasBackground": false,
-            "fontFamily": "SourceSansPro"
+            "fontColor": "#050505",
+            "hasBackground": false
           }
         },
         "ticksConfig": {
@@ -216,7 +216,7 @@
         {
           "id": "y_left_0",
           "displayAxis": true,
-          "showAxisTitle": true,
+          "showAxisTitle": false,
           "axisTitleFormatting": {
             "fontSize": 15,
             "fontColor": "#333333",
@@ -319,7 +319,7 @@
       "hexbinNumber": 20,
       "hexbinRadiusMode": "NUM_HEXAGONS",
       "valuesInChartDisplayOptions": {
-        "displayValues": false,
+        "displayValues": true,
         "displayPieLabelsOrValues": true,
         "displayMode": "VALUES",
         "overlappingStrategy": "AUTO",
