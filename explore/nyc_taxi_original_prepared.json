@@ -1,0 +1,170 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL",
+      "list": [
+        {
+          "name": "Fournisseur ID",
+          "d": true
+        },
+        {
+          "name": "Date Heure Depart",
+          "d": true
+        },
+        {
+          "name": "Date Heure Arrivée",
+          "d": true
+        },
+        {
+          "name": "Nombre Passager",
+          "d": true
+        },
+        {
+          "name": "Distance (Miles)",
+          "d": true
+        },
+        {
+          "name": "Code Tarif ID",
+          "d": true
+        },
+        {
+          "name": "Zone Départ ID",
+          "d": true
+        },
+        {
+          "name": "Zone Arrivée ID",
+          "d": true
+        },
+        {
+          "name": "Type Paiement",
+          "d": true
+        },
+        {
+          "name": "Prix Course Base",
+          "d": true
+        },
+        {
+          "name": "Supplément",
+          "d": true
+        },
+        {
+          "name": "Montant Pourboire",
+          "d": true
+        },
+        {
+          "name": "Montant Péages",
+          "d": true
+        },
+        {
+          "name": "Montant Total",
+          "d": true
+        },
+        {
+          "name": "Surcharge Congestion",
+          "d": true
+        },
+        {
+          "name": "Frais Aéroport",
+          "d": true
+        },
+        {
+          "name": "Frais Zone Congestion",
+          "d": true
+        }
+      ]
+    },
+    "columnOrder": [],
+    "columnWidthsByName": {
+      "Fournisseur ID": 120,
+      "Date Heure Depart": 176,
+      "Date Heure Arrivée": 176,
+      "Nombre Passager": 128,
+      "Distance (Miles)": 135,
+      "Code Tarif ID": 113,
+      "Zone Départ ID": 120,
+      "Zone Arrivée ID": 128,
+      "Type Paiement": 113,
+      "Prix Course Base": 135,
+      "Supplément": 134,
+      "Montant Pourboire": 143,
+      "Montant Péages": 134,
+      "Montant Total": 134,
+      "Surcharge Congestion": 165,
+      "Frais Aéroport": 134,
+      "Frais Zone Congestion": 173
+    },
+    "columnUseScientificNotationByName": {},
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "individualColumnsRules": [],
+      "valueColoringMode": "HASH",
+      "coloringGroups": []
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxRecordsForDisplay": -1,
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [],
+  "interactiveSearch": {
+    "savedQueries": []
+  },
+  "customMeasures": [],
+  "reusableDimensions": [],
+  "hierarchies": []
+}
