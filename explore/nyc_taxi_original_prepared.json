@@ -14,6 +14,10 @@
           "d": true
         },
         {
+          "name": "JourSemaine",
+          "d": true
+        },
+        {
           "name": "Date Heure Arrivée",
           "d": true
         },
@@ -108,7 +112,8 @@
       "Frais Zone Congestion": 173,
       "Durée (Minutes)": 128,
       "Vitesse Moyenne (Milles/H)": 189,
-      "Ration Pourboire (%)": 165
+      "Ration Pourboire (%)": 165,
+      "JourSemaine": 100
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -123,7 +128,7 @@
     "explorationSampling": {
       "selection": {
         "maxRecordsForDisplay": -1,
-        "maxStoredBytes": 104857600,
+        "maxStoredBytes": -1,
         "timeout": -1,
         "filter": {
           "distinct": false,
@@ -135,15 +140,15 @@
           "enabled": false,
           "rules": []
         },
-        "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 10000,
+        "samplingMethod": "TAIL_SEQUENTIAL",
+        "maxRecords": 143826,
         "targetRatio": 0.02,
         "ascending": true,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "_refreshTrigger": 1783981490621
     },
     "vizSampling": {
       "selection": {
