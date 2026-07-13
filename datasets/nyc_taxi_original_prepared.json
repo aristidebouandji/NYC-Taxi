@@ -78,6 +78,7 @@
       {"name":"Prix Course Base","type":"double"},
       {"name":"Supplément","type":"double"},
       {"name":"Montant Pourboire","type":"double"},
+      {"name":"Ration Pourboire (%)","type":"double"},
       {"name":"Montant Péages","type":"double"},
       {"name":"Montant Total","type":"double"},
       {"name":"Surcharge Congestion","type":"double"},
