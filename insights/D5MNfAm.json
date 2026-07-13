@@ -58,7 +58,7 @@
           "prefix": "$",
           "suffix": "",
           "showValue": true,
-          "displayLabel": "CHIFFRE D\u0027AFFIRE",
+          "displayLabel": "CHIFFRE D\u0027AFFIRE ACTIVITE",
           "showDisplayLabel": true,
           "labelPosition": "TOP",
           "percentile": 50.0,
@@ -343,7 +343,7 @@
           "colorGroupMode": "RULES",
           "rules": [
             {
-              "mode": "GREATER_OR_EQUAL_THAN",
+              "mode": "LOWER_OR_EQUAL_THAN",
               "styleClass": "color-rule--orange-text",
               "colorOptions": {
                 "singleColor": "",
@@ -361,7 +361,7 @@
                   "customBackgroundColor": "#668DBB"
                 }
               },
-              "conditionValue1": "1",
+              "conditionValue1": "5000000",
               "conditionValue2": 0.0
             },
             {
@@ -405,7 +405,7 @@
                   "customBackgroundColor": "#668DBB"
                 }
               },
-              "conditionValue1": "3",
+              "conditionValue1": "5000000",
               "conditionValue2": 0.0
             }
           ],
