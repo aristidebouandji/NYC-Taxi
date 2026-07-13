@@ -16,6 +16,10 @@
       },
       {
         "d": true,
+        "name": "Durée (Minutes)"
+      },
+      {
+        "d": true,
         "name": "Nombre Passager"
       },
       {
@@ -424,6 +428,18 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "diff(val(\"Date Heure Arrivée\"), val(\"Date Heure Depart\"), \u0027minutes\u0027)",
+        "column": "Durée (Minutes)",
+        "errorColumn": ""
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -455,6 +471,7 @@
   "flagNumericValues": true,
   "columnWidthsByName": {
     "Code Tarif ID": 134,
+    "Durée (Minutes)": 128,
     "tpep_dropoff_datetime": 197,
     "congestion_surcharge": 165,
     "Type Paiement": 113,
