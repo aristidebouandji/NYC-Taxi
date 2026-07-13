@@ -344,7 +344,7 @@
           "rules": [
             {
               "mode": "LOWER_OR_EQUAL_THAN",
-              "styleClass": "color-rule--orange-text",
+              "styleClass": "color-rule--orange-background",
               "colorOptions": {
                 "singleColor": "",
                 "transparency": 0.75,
