@@ -67,6 +67,7 @@
       {"name":"Fournisseur ID","type":"bigint"},
       {"name":"Date Heure Depart","type":"datetimenotz"},
       {"name":"Date Heure Arrivée","type":"datetimenotz"},
+      {"name":"Durée (Minutes)","type":"bigint"},
       {"name":"Nombre Passager","type":"bigint"},
       {"name":"Distance (Miles)","type":"double"},
       {"name":"Code Tarif ID","type":"bigint"},
