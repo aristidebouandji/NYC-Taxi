@@ -66,6 +66,7 @@
     "columns": [
       {"name":"Fournisseur ID","type":"bigint"},
       {"name":"Date Heure Depart","type":"datetimenotz"},
+      {"name":"JourSemaine","type":"string"},
       {"name":"Date Heure Arrivée","type":"datetimenotz"},
       {"name":"Durée (Minutes)","type":"bigint"},
       {"name":"Nombre Passager","type":"bigint"},
