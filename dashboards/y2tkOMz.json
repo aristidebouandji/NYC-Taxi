@@ -9,7 +9,7 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 11,
+              "width": 14,
               "height": 7
             },
             "clickAction": "DO_NOTHING",
@@ -103,8 +103,8 @@
             "box": {
               "top": 0,
               "left": 15,
-              "width": 8,
-              "height": 8
+              "width": 12,
+              "height": 7
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
