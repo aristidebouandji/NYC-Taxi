@@ -613,6 +613,7 @@
         "columnIdByCustomExpandedStatus": {},
         "columnIdByCustomWidth": {}
       },
+      "referenceLines": [],
       "gridlinesOptions": {
         "vertical": {
           "show": false,
@@ -623,7 +624,7 @@
           }
         },
         "horizontal": {
-          "show": false,
+          "show": true,
           "displayAxis": {
             "type": "LEFT_Y_AXIS"
           },
