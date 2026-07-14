@@ -88,7 +88,7 @@
           "useParenthesesForNegativeValues": false,
           "shouldFormatInPercentage": false,
           "hideTrailingZeros": true,
-          "prefix": "",
+          "prefix": "$",
           "suffix": "",
           "showValue": true,
           "showDisplayLabel": true,
