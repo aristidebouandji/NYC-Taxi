@@ -324,6 +324,52 @@
             "box": {
               "top": 0,
               "left": 0,
+              "width": 9,
+              "height": 7
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showXAxis": true,
+              "showXAxisTitle": true,
+              "showYAxis": true,
+              "showYAxisTitle": true,
+              "showLegend": false,
+              "showBrush": false,
+              "showBreadcrumb": true,
+              "inheritLegendPlacement": true,
+              "legendPlacement": "OUTER_RIGHT",
+              "showTooltips": true,
+              "autoPlayAnimation": true,
+              "useInsightTheme": false
+            },
+            "backgroundOpacity": 1.0,
+            "backgroundColor": "#ffffff",
+            "autoLoad": true,
+            "locked": false,
+            "isDisplacing": false,
+            "borderOptions": {
+              "color": "#CCCCCC",
+              "radius": 0,
+              "size": 1
+            },
+            "titleOptions": {
+              "showTitle": "YES",
+              "fontColor": "#000000",
+              "fontSize": 13
+            },
+            "insightId": "Ra1AYNW",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "useDashboardSpacing": true,
+            "tileSpacing": 8,
+            "padding": 0,
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 9,
               "width": 8,
               "height": 8
             },
@@ -357,7 +403,7 @@
               "fontColor": "#000000",
               "fontSize": 13
             },
-            "insightId": "Ra1AYNW",
+            "insightId": "lbElZYO",
             "insightType": "chart",
             "displayMode": "INSIGHT",
             "useDashboardSpacing": true,
