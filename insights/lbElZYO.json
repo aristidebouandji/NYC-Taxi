@@ -50,21 +50,23 @@
           "computeMode": "NORMAL",
           "computeModeDim": 0,
           "multiplier": "Auto",
+          "decimalPlaces": 0,
           "digitGrouping": "DEFAULT",
           "useParenthesesForNegativeValues": false,
           "shouldFormatInPercentage": false,
           "hideTrailingZeros": true,
           "prefix": "",
-          "suffix": "",
+          "suffix": " Min",
           "showValue": true,
+          "displayLabel": "DUREE MOYENNE",
           "showDisplayLabel": true,
-          "labelPosition": "BOTTOM",
+          "labelPosition": "TOP",
           "percentile": 50.0,
           "isCustomPercentile": false,
           "kpiTextAlign": "CENTER",
           "kpiValueFontSizeMode": "RESPONSIVE",
           "kpiValueFontSize": 32,
-          "responsiveTextAreaFill": 100,
+          "responsiveTextAreaFill": 93,
           "valueTextFormatting": {
             "fontSize": 11,
             "fontColor": "#333333",
@@ -72,7 +74,7 @@
             "fontFamily": "SourceSansPro"
           },
           "labelTextFormatting": {
-            "fontSize": 15,
+            "fontSize": 24,
             "fontColor": "#333333",
             "hasBackground": false
           },
@@ -336,7 +338,89 @@
         },
         "customColors": {}
       },
-      "colorGroups": [],
+      "colorGroups": [
+        {
+          "colorGroupMode": "RULES",
+          "rules": [
+            {
+              "mode": "LOWER_OR_EQUAL_THAN",
+              "styleClass": "color-rule--red-background",
+              "colorOptions": {
+                "singleColor": "",
+                "transparency": 0.75,
+                "colorPalette": "dku_text_background",
+                "customPalette": {
+                  "id": "__dku_custom__",
+                  "name": "Custom Palette",
+                  "colors": [],
+                  "values": [],
+                  "fixedValues": false
+                },
+                "customColors": {
+                  "customFontColor": "#FFFFFF",
+                  "customBackgroundColor": "#668DBB"
+                }
+              },
+              "conditionValue1": "10",
+              "conditionValue2": 0.0
+            },
+            {
+              "mode": "GREATER_THAN",
+              "styleClass": "color-rule--green-background",
+              "colorOptions": {
+                "singleColor": "#659a88",
+                "transparency": 0.75,
+                "colorPalette": "dku_text_background",
+                "customPalette": {
+                  "id": "__dku_custom__",
+                  "name": "Custom palette",
+                  "colors": [],
+                  "values": [],
+                  "fixedValues": false
+                },
+                "customColors": {
+                  "customFontColor": "#FFFFFF",
+                  "customBackgroundColor": "#668DBB"
+                }
+              },
+              "conditionValue1": "10",
+              "conditionValue2": 0.0
+            }
+          ],
+          "appliedColumns": [
+            {
+              "column": "Durée (Minutes)",
+              "type": "NUMERICAL",
+              "function": "AVG",
+              "percentile": 50.0
+            }
+          ],
+          "colorOptions": {
+            "ccScaleMode": "NORMAL",
+            "paletteType": "CONTINUOUS",
+            "quantizationMode": "NONE",
+            "numQuantizeSteps": 5,
+            "paletteMiddleValue": 0.0,
+            "heatDensityMapIntensity": 0.0,
+            "heatDensityMapRadius": 0.0,
+            "singleColor": "",
+            "transparency": 0.75,
+            "colorPalette": "dku_text_background",
+            "customPalette": {
+              "id": "__dku_custom__",
+              "name": "Custom Palette",
+              "colors": [],
+              "values": [],
+              "fixedValues": false
+            },
+            "customColors": {
+              "customFontColor": "#FFFFFF",
+              "customBackgroundColor": "#668DBB"
+            }
+          },
+          "colorMeasure": []
+        }
+      ],
       "bubblesOptions": {
         "defaultRadius": 5.0,
         "singleShape": "FILLED_CIRCLE"
