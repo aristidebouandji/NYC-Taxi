@@ -225,6 +225,7 @@
             },
             "titleOptions": {
               "showTitle": "YES",
+              "title": "Volume de Passagers",
               "fontColor": "#000000",
               "fontSize": 13
             },
