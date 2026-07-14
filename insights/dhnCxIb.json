@@ -184,7 +184,6 @@
             "mode": "INTERVAL"
           },
           "customExtent": {
-            "editMode": "AUTO",
             "manualExtent": [
               null,
               null
@@ -299,7 +298,7 @@
         "heatDensityMapIntensity": 0.5,
         "heatDensityMapRadius": 0.5,
         "singleColor": "#1f77b4",
-        "transparency": 0.75,
+        "transparency": 0.85,
         "colorPalette": "default_theme",
         "customPalette": {
           "id": "__dku_custom__",
@@ -368,13 +367,13 @@
         },
         "optimizeRendering": false,
         "regression": {
-          "show": false,
-          "displayFormula": false,
+          "show": true,
+          "displayFormula": true,
           "type": "LINEAR",
           "labelPosition": "INSIDE_END",
           "lineFormatting": {
-            "color": "#000",
-            "size": 1
+            "color": "#9C4259",
+            "size": 2
           },
           "textFormatting": {
             "fontSize": 11,
@@ -559,6 +558,7 @@
         "columnIdByCustomExpandedStatus": {},
         "columnIdByCustomWidth": {}
       },
+      "referenceLines": [],
       "gridlinesOptions": {
         "vertical": {
           "show": false,
