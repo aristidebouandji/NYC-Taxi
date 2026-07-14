@@ -323,54 +323,8 @@
             "tileType": "INSIGHT",
             "box": {
               "top": 0,
-              "left": 0,
-              "width": 9,
-              "height": 7
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "showXAxis": true,
-              "showXAxisTitle": true,
-              "showYAxis": true,
-              "showYAxisTitle": true,
-              "showLegend": false,
-              "showBrush": false,
-              "showBreadcrumb": true,
-              "inheritLegendPlacement": true,
-              "legendPlacement": "OUTER_RIGHT",
-              "showTooltips": true,
-              "autoPlayAnimation": true,
-              "useInsightTheme": false
-            },
-            "backgroundOpacity": 1.0,
-            "backgroundColor": "#ffffff",
-            "autoLoad": true,
-            "locked": false,
-            "isDisplacing": false,
-            "borderOptions": {
-              "color": "#CCCCCC",
-              "radius": 0,
-              "size": 1
-            },
-            "titleOptions": {
-              "showTitle": "YES",
-              "fontColor": "#000000",
-              "fontSize": 13
-            },
-            "insightId": "Ra1AYNW",
-            "insightType": "chart",
-            "displayMode": "INSIGHT",
-            "useDashboardSpacing": true,
-            "tileSpacing": 8,
-            "padding": 0,
-            "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 0,
-              "left": 27,
-              "width": 9,
+              "left": 22,
+              "width": 14,
               "height": 7
             },
             "clickAction": "DO_NOTHING",
@@ -507,8 +461,8 @@
             "tileType": "INSIGHT",
             "box": {
               "top": 0,
-              "left": 12,
-              "width": 13,
+              "left": 0,
+              "width": 14,
               "height": 7
             },
             "clickAction": "DO_NOTHING",
@@ -568,7 +522,54 @@
     {
       "id": "RvXIimm",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 8,
+              "height": 8
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showXAxis": true,
+              "showXAxisTitle": true,
+              "showYAxis": true,
+              "showYAxisTitle": true,
+              "showLegend": false,
+              "showBrush": false,
+              "showBreadcrumb": true,
+              "inheritLegendPlacement": true,
+              "legendPlacement": "OUTER_RIGHT",
+              "showTooltips": true,
+              "autoPlayAnimation": true,
+              "useInsightTheme": false
+            },
+            "backgroundOpacity": 1.0,
+            "backgroundColor": "#ffffff",
+            "autoLoad": true,
+            "locked": false,
+            "isDisplacing": false,
+            "borderOptions": {
+              "color": "#CCCCCC",
+              "radius": 0,
+              "size": 1
+            },
+            "titleOptions": {
+              "showTitle": "YES",
+              "fontColor": "#000000",
+              "fontSize": 13
+            },
+            "insightId": "A5fu4h6",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "useDashboardSpacing": true,
+            "tileSpacing": 8,
+            "padding": 0,
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
       },
       "show": true,
       "showTitle": false,
@@ -576,7 +577,7 @@
       "titleFontColor": "#444444",
       "titleFontSize": 28,
       "enableCrossFilters": true,
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#E6E6E6",
       "showFilterPanel": true,
       "filtersParams": {
         "panelPosition": "TOP"
