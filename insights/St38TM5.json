@@ -29,7 +29,7 @@
       "id": "3ddb5a0e",
       "type": "pie",
       "variant": "normal",
-      "name": "Sum of Montant Total by Type Paiement",
+      "name": "Count by Type Paiement",
       "userEditedName": false,
       "displayWithEChartsByDefault": true,
       "genericDimension0": [
@@ -71,8 +71,7 @@
       "animationDimension": [],
       "genericMeasures": [
         {
-          "column": "Montant Total",
-          "function": "SUM",
+          "function": "COUNT",
           "type": "NUMERICAL",
           "displayed": true,
           "isA": "measure",
@@ -80,15 +79,15 @@
           "displayType": "column",
           "isUnaggregated": false,
           "uaComputeMode": "STACK",
-          "computeMode": "NORMAL",
+          "computeMode": "PERCENTAGE",
           "computeModeDim": 0,
           "multiplier": "Auto",
-          "decimalPlaces": 0,
-          "digitGrouping": "DEFAULT",
+          "decimalPlaces": 2,
+          "digitGrouping": "SPACE_POINT",
           "useParenthesesForNegativeValues": false,
           "shouldFormatInPercentage": false,
           "hideTrailingZeros": true,
-          "prefix": "",
+          "prefix": ": ",
           "suffix": "",
           "showValue": true,
           "showDisplayLabel": true,
@@ -116,8 +115,8 @@
             "textFormatting": {
               "fontSize": 11,
               "fontColor": "AUTO",
-              "hasBackground": true,
-              "backgroundColor": "#E6E6E6BF"
+              "hasBackground": false,
+              "backgroundColor": "#D9D9D9BF"
             },
             "addDetails": false,
             "additionalMeasures": [],
@@ -324,7 +323,7 @@
       "valuesInChartDisplayOptions": {
         "displayValues": false,
         "displayPieLabelsOrValues": true,
-        "displayMode": "VALUES",
+        "displayMode": "VALUES_AND_LABELS",
         "overlappingStrategy": "AUTO",
         "textFormatting": {
           "fontSize": 11,
