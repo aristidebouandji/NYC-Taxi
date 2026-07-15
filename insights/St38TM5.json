@@ -27,9 +27,9 @@
     },
     "def": {
       "id": "3ddb5a0e",
-      "type": "grouped_columns",
+      "type": "pie",
       "variant": "normal",
-      "name": "Chart",
+      "name": "Sum of Type Paiement by Type Paiement",
       "userEditedName": false,
       "displayWithEChartsByDefault": true,
       "genericDimension0": [],
@@ -86,6 +86,7 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
+      "filters": [],
       "xAxisFormatting": {
         "displayAxis": true,
         "showAxisTitle": true,
@@ -115,6 +116,7 @@
           "mode": "INTERVAL"
         },
         "customExtent": {
+          "editMode": "AUTO",
           "manualExtent": [
             null,
             null
@@ -154,6 +156,7 @@
             "mode": "INTERVAL"
           },
           "customExtent": {
+            "editMode": "AUTO",
             "manualExtent": [
               null,
               null
@@ -192,6 +195,7 @@
             "mode": "INTERVAL"
           },
           "customExtent": {
+            "editMode": "AUTO",
             "manualExtent": [
               null,
               null
@@ -277,10 +281,12 @@
         },
         "customColors": {}
       },
+      "colorGroups": [],
       "bubblesOptions": {
         "defaultRadius": 5.0,
         "singleShape": "FILLED_CIRCLE"
       },
+      "computeMode": "NORMAL",
       "xAxisMode": "NORMAL",
       "yAxisMode": "NORMAL",
       "pieOptions": {
@@ -527,7 +533,9 @@
         },
         "horizontal": {
           "show": false,
-          "displayAxis": {},
+          "displayAxis": {
+            "type": "LEFT_Y_AXIS"
+          },
           "lineFormatting": {
             "type": "FILLED",
             "color": "#d9d9d9",
