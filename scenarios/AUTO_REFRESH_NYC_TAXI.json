@@ -1,7 +1,7 @@
 {
   "type": "step_based",
   "name": "Auto_Refresh_NYC_Taxi",
-  "active": false,
+  "active": true,
   "checklists": {
     "checklists": []
   },
