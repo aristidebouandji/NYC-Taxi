@@ -574,8 +574,8 @@
             "box": {
               "top": 8,
               "left": 0,
-              "width": 17,
-              "height": 12
+              "width": 19,
+              "height": 13
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -583,7 +583,7 @@
               "showXAxisTitle": true,
               "showYAxis": true,
               "showYAxisTitle": true,
-              "showLegend": true,
+              "showLegend": false,
               "showBrush": false,
               "showBreadcrumb": true,
               "inheritLegendPlacement": false,
