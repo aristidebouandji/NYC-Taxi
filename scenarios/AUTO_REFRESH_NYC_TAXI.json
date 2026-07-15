@@ -44,6 +44,7 @@
         "type": "build_flowitem",
         "name": "Construire",
         "enabled": true,
+        "comment": "Cette étape permet de reconstruire la préparation et nettoyage des données",
         "alwaysShowComment": false,
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
