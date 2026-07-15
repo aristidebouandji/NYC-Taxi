@@ -369,10 +369,10 @@
           "fixedValues": false
         },
         "customColors": {
-          "v_Autre": "#1f77b4",
-          "v_Carte bancaire": "#A4DB07",
+          "v_Autre": "#A3EDF5",
+          "v_Carte B": "#9C4259",
           "v_Espèce": "#ff7f0e",
-          "v_Paiement Mobile": "#9C4259"
+          "v_Paiement Mobile": "#6B6ECF"
         }
       },
       "colorGroups": [],
