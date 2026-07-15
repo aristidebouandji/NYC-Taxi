@@ -522,7 +522,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FindReplace",
@@ -550,6 +550,34 @@
         "normalization": "EXACT",
         "columns": [
           "Type Paiement"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "useDatasetForMapping": false,
+        "mapping": [
+          {
+            "from": "1",
+            "to": "Creative Mobile"
+          },
+          {
+            "from": "2",
+            "to": "Verifone"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "Fournisseur ID"
         ],
         "appliesTo": "SINGLE_COLUMN",
         "stopAfterFirstMatch": false,
