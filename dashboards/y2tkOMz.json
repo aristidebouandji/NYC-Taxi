@@ -574,7 +574,7 @@
             "box": {
               "top": 8,
               "left": 0,
-              "width": 16,
+              "width": 17,
               "height": 12
             },
             "clickAction": "DO_NOTHING",
@@ -583,11 +583,11 @@
               "showXAxisTitle": true,
               "showYAxis": true,
               "showYAxisTitle": true,
-              "showLegend": false,
+              "showLegend": true,
               "showBrush": false,
               "showBreadcrumb": true,
-              "inheritLegendPlacement": true,
-              "legendPlacement": "OUTER_RIGHT",
+              "inheritLegendPlacement": false,
+              "legendPlacement": "OUTER_BOTTOM",
               "showTooltips": true,
               "autoPlayAnimation": true,
               "useInsightTheme": false
