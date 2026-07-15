@@ -240,10 +240,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 20,
-              "left": 0,
+              "top": 0,
+              "left": 19,
               "width": 8,
-              "height": 8
+              "height": 7
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -320,6 +320,24 @@
           "id": "1784058892917_574",
           "column": "JourSemaine",
           "label": "JourSemaine",
+          "columnType": "ALPHANUM",
+          "isA": "filter",
+          "excludedValues": {},
+          "isAGlobalFilter": true,
+          "useMinimalUi": false,
+          "isDrill": false,
+          "excludeOtherValues": false,
+          "allValuesInSample": false,
+          "active": true,
+          "includeEmptyValues": true
+        },
+        {
+          "filterType": "ALPHANUM_FACET",
+          "filterSelectionType": "MULTI_SELECT",
+          "facetSorting": "COUNT_DESC",
+          "id": "1784131382673_1011",
+          "column": "Fournisseur ID",
+          "label": "Fournisseur ID",
           "columnType": "ALPHANUM",
           "isA": "filter",
           "excludedValues": {},
