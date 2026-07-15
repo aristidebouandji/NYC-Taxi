@@ -29,8 +29,8 @@
       "id": "971d95aa",
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Count by Date Heure Depart",
-      "userEditedName": false,
+      "name": "Course de la Journée",
+      "userEditedName": true,
       "displayWithEChartsByDefault": true,
       "genericDimension0": [
         {
