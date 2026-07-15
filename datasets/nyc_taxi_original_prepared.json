@@ -217,7 +217,30 @@
   },
   "metricsChecks": {
     "monitor": false,
-    "checks": [],
+    "checks": [
+      {
+        "type": "numericRange",
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "softMinimum": 0.0,
+        "softMaximum": 0.0,
+        "minimumEnabled": true,
+        "maximumEnabled": false,
+        "softMinimumEnabled": false,
+        "softMaximumEnabled": false,
+        "metricId": "records:COUNT_RECORDS",
+        "autoComputeMetric": true,
+        "meta": {
+          "name": "",
+          "label": ""
+        },
+        "id": "cCbGn2xs",
+        "displayName": "Record count is above 0",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
+      }
+    ],
     "displayedState": {
       "checks": []
     }
