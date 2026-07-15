@@ -573,6 +573,10 @@
           {
             "from": "2",
             "to": "Verifone"
+          },
+          {
+            "from": "7",
+            "to": "Autres"
           }
         ],
         "normalization": "EXACT",
