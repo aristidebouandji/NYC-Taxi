@@ -70,6 +70,33 @@
           "handleWarningsAs": "WARNING",
           "proceedOnFailure": false
         }
+      },
+      {
+        "id": "comp_metrics_d_nyc_taxi_original_prepared",
+        "type": "compute_metrics",
+        "name": "Vérification des Métrics",
+        "enabled": true,
+        "comment": "Cette étape de s\u0027assurer que les metrics sont bien respecter",
+        "alwaysShowComment": false,
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 3,
+        "maxRetriesOnFail": 1,
+        "params": {
+          "computes": [
+            {
+              "type": "DATASET",
+              "itemId": "nyc_taxi_original_prepared",
+              "partitionsSpec": ""
+            }
+          ],
+          "proceedOnFailure": false
+        }
       }
     ]
   },
