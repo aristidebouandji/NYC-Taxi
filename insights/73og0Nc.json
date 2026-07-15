@@ -58,7 +58,7 @@
           "prefix": "$",
           "suffix": "",
           "showValue": true,
-          "displayLabel": "CA POURBOIRE",
+          "displayLabel": "POURBOIRE",
           "showDisplayLabel": true,
           "labelPosition": "TOP",
           "percentile": 50.0,
