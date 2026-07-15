@@ -696,6 +696,7 @@
             },
             "titleOptions": {
               "showTitle": "YES",
+              "title": "Moyenne Passager",
               "fontColor": "#000000",
               "fontSize": 13
             },
