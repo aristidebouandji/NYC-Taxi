@@ -211,7 +211,6 @@
         "records:COUNT_RECORDS",
         "reporting:BUILD_START_DATE",
         "reporting:METRICS_COMPUTATION_DURATION",
-        "reporting:WARNING_COUNT",
         "reporting:BUILD_DURATION"
       ]
     }
