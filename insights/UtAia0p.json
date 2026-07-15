@@ -27,16 +27,73 @@
     },
     "def": {
       "id": "2fd1c7bd",
-      "type": "grouped_columns",
+      "type": "kpi",
       "variant": "normal",
-      "name": "Chart",
+      "name": "Avg of Nombre Passager",
       "userEditedName": false,
       "displayWithEChartsByDefault": true,
       "genericDimension0": [],
       "genericDimension1": [],
       "facetDimension": [],
       "animationDimension": [],
-      "genericMeasures": [],
+      "genericMeasures": [
+        {
+          "column": "Nombre Passager",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "isUnaggregated": false,
+          "uaComputeMode": "STACK",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "multiplier": "Auto",
+          "decimalPlaces": 1,
+          "digitGrouping": "DEFAULT",
+          "useParenthesesForNegativeValues": false,
+          "shouldFormatInPercentage": false,
+          "hideTrailingZeros": true,
+          "prefix": "",
+          "suffix": "",
+          "showValue": true,
+          "displayLabel": "Taille Moyenne du Groupe de Passagers",
+          "showDisplayLabel": true,
+          "labelPosition": "TOP",
+          "percentile": 50.0,
+          "isCustomPercentile": false,
+          "kpiTextAlign": "CENTER",
+          "kpiValueFontSizeMode": "RESPONSIVE",
+          "kpiValueFontSize": 32,
+          "responsiveTextAreaFill": 100,
+          "valueTextFormatting": {
+            "fontSize": 11,
+            "fontColor": "#333333",
+            "hasBackground": false,
+            "fontFamily": "SourceSansPro"
+          },
+          "labelTextFormatting": {
+            "fontSize": 24,
+            "fontColor": "#333333",
+            "hasBackground": false
+          },
+          "valuesInChartDisplayOptions": {
+            "displayValues": true,
+            "textFormatting": {
+              "fontSize": 11,
+              "fontColor": "AUTO",
+              "hasBackground": false,
+              "backgroundColor": "#D9D9D9BF"
+            },
+            "addDetails": false,
+            "additionalMeasures": [],
+            "placementMode": "AUTO",
+            "spacing": 12
+          },
+          "colorRules": []
+        }
+      ],
       "genericHierarchyDimension": [],
       "yHierarchyDimension": [],
       "xHierarchyDimension": [],
@@ -86,6 +143,7 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
+      "filters": [],
       "xAxisFormatting": {
         "displayAxis": true,
         "showAxisTitle": true,
@@ -115,6 +173,7 @@
           "mode": "INTERVAL"
         },
         "customExtent": {
+          "editMode": "AUTO",
           "manualExtent": [
             null,
             null
@@ -154,6 +213,7 @@
             "mode": "INTERVAL"
           },
           "customExtent": {
+            "editMode": "AUTO",
             "manualExtent": [
               null,
               null
@@ -192,6 +252,7 @@
             "mode": "INTERVAL"
           },
           "customExtent": {
+            "editMode": "AUTO",
             "manualExtent": [
               null,
               null
@@ -256,7 +317,7 @@
       "multiTooltips": false,
       "animationFrameDuration": 3000,
       "animationRepeat": true,
-      "colorMode": "UNIQUE_SCALE",
+      "colorMode": "COLOR_GROUPS",
       "colorOptions": {
         "ccScaleMode": "NORMAL",
         "paletteType": "CONTINUOUS",
@@ -277,10 +338,94 @@
         },
         "customColors": {}
       },
+      "colorGroups": [
+        {
+          "colorGroupMode": "RULES",
+          "rules": [
+            {
+              "mode": "LOWER_OR_EQUAL_THAN",
+              "styleClass": "color-rule--green-background",
+              "colorOptions": {
+                "singleColor": "",
+                "transparency": 0.75,
+                "colorPalette": "dku_text_background",
+                "customPalette": {
+                  "id": "__dku_custom__",
+                  "name": "Custom Palette",
+                  "colors": [],
+                  "values": [],
+                  "fixedValues": false
+                },
+                "customColors": {
+                  "customFontColor": "#FFFFFF",
+                  "customBackgroundColor": "#668DBB"
+                }
+              },
+              "conditionValue1": "4",
+              "conditionValue2": 0.0
+            },
+            {
+              "mode": "GREATER_THAN",
+              "styleClass": "color-rule--red-background",
+              "colorOptions": {
+                "singleColor": "#659a88",
+                "transparency": 0.75,
+                "colorPalette": "dku_text_background",
+                "customPalette": {
+                  "id": "__dku_custom__",
+                  "name": "Custom palette",
+                  "colors": [],
+                  "values": [],
+                  "fixedValues": false
+                },
+                "customColors": {
+                  "customFontColor": "#FFFFFF",
+                  "customBackgroundColor": "#668DBB"
+                }
+              },
+              "conditionValue1": "4",
+              "conditionValue2": 0.0
+            }
+          ],
+          "appliedColumns": [
+            {
+              "column": "Nombre Passager",
+              "type": "NUMERICAL",
+              "function": "AVG",
+              "percentile": 50.0
+            }
+          ],
+          "colorOptions": {
+            "ccScaleMode": "NORMAL",
+            "paletteType": "CONTINUOUS",
+            "quantizationMode": "NONE",
+            "numQuantizeSteps": 5,
+            "paletteMiddleValue": 0.0,
+            "heatDensityMapIntensity": 0.0,
+            "heatDensityMapRadius": 0.0,
+            "singleColor": "",
+            "transparency": 0.75,
+            "colorPalette": "dku_text_background",
+            "customPalette": {
+              "id": "__dku_custom__",
+              "name": "Custom Palette",
+              "colors": [],
+              "values": [],
+              "fixedValues": false
+            },
+            "customColors": {
+              "customFontColor": "#FFFFFF",
+              "customBackgroundColor": "#668DBB"
+            }
+          },
+          "colorMeasure": []
+        }
+      ],
       "bubblesOptions": {
         "defaultRadius": 5.0,
         "singleShape": "FILLED_CIRCLE"
       },
+      "computeMode": "NORMAL",
       "xAxisMode": "NORMAL",
       "yAxisMode": "NORMAL",
       "pieOptions": {
@@ -527,7 +672,9 @@
         },
         "horizontal": {
           "show": false,
-          "displayAxis": {},
+          "displayAxis": {
+            "type": "LEFT_Y_AXIS"
+          },
           "lineFormatting": {
             "type": "FILLED",
             "color": "#d9d9d9",
@@ -704,7 +851,7 @@
   },
   "owner": "admin",
   "listed": false,
-  "name": "Chart on nyc_taxi_original_prepared",
+  "name": "Avg of Nombre Passager on nyc_taxi_original_prepared",
   "dashboardCreationId": "y2tkOMz",
   "creationTag": {
     "versionNumber": 0,
