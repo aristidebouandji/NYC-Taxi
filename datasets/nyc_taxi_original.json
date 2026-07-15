@@ -44,7 +44,7 @@
     "mode": "query",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "query": "Select * from public.nyc_taxi_original\nlimit 150000;",
+    "query": "Select * from public.nyc_taxi_original\nlimit ${Limite_lignes};",
     "table": "nyc_taxi_original",
     "schema": "public",
     "tableCreationMode": "auto",
