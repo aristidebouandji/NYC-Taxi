@@ -15,7 +15,7 @@
           "enabled": false,
           "rules": []
         },
-        "samplingMethod": "HEAD_SEQUENTIAL",
+        "samplingMethod": "FULL",
         "maxRecords": 143826,
         "targetRatio": 0.02,
         "ascending": true,
@@ -23,7 +23,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "_refreshTrigger": 1784127253561
     },
     "def": {
       "id": "3ddb5a0e",
@@ -116,8 +116,8 @@
             "textFormatting": {
               "fontSize": 11,
               "fontColor": "AUTO",
-              "hasBackground": false,
-              "backgroundColor": "#D9D9D9BF"
+              "hasBackground": true,
+              "backgroundColor": "#E6E6E6BF"
             },
             "addDetails": false,
             "additionalMeasures": [],
