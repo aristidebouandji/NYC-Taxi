@@ -89,10 +89,10 @@
     ]
   },
   "explorationSampling": {
-    "_refreshTrigger": 0,
+    "_refreshTrigger": 1784129314051,
     "selection": {
       "latestPartitionsN": 1,
-      "maxRecords": 10000,
+      "maxRecords": -1,
       "maxRecordsForDisplay": -1,
       "ordering": {
         "rules": [],
@@ -559,7 +559,7 @@
     }
   ],
   "maxProcessedMemTableBytes": -1,
-  "previewMode": "ALL_ROWS",
+  "previewMode": "IMPACTED_ONLY",
   "vizSampling": {
     "_refreshTrigger": 0,
     "selection": {
