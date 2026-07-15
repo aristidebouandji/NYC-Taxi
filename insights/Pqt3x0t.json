@@ -29,14 +29,105 @@
       "id": "971d95aa",
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Chart",
+      "name": "Count by Date Heure Depart",
       "userEditedName": false,
       "displayWithEChartsByDefault": true,
-      "genericDimension0": [],
+      "genericDimension0": [
+        {
+          "numParams": {
+            "mode": "FIXED_NB",
+            "emptyBinsMode": "AVERAGE",
+            "binSize": 1.0,
+            "niceBounds": false,
+            "customBinValues": [],
+            "nbBins": 10
+          },
+          "dateParams": {
+            "mode": "HOUR_OF_DAY",
+            "maxBinNumberForAutomaticMode": 0
+          },
+          "maxValues": 0,
+          "generateOthersCategory": true,
+          "forceLastPositionOthers": false,
+          "oneTickPerBin": "AUTO",
+          "filters": [],
+          "isA": "dimension",
+          "sort": {
+            "type": "NATURAL",
+            "sortId": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          },
+          "multiplier": "Auto",
+          "hideTrailingZeros": true,
+          "digitGrouping": "DEFAULT",
+          "useParenthesesForNegativeValues": false,
+          "shouldFormatInPercentage": false,
+          "useLastValueAsTotal": false,
+          "column": "Date Heure Depart",
+          "type": "DATE"
+        }
+      ],
       "genericDimension1": [],
       "facetDimension": [],
       "animationDimension": [],
-      "genericMeasures": [],
+      "genericMeasures": [
+        {
+          "function": "COUNT",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "isUnaggregated": false,
+          "uaComputeMode": "STACK",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "multiplier": "Auto",
+          "decimalPlaces": 0,
+          "digitGrouping": "DEFAULT",
+          "useParenthesesForNegativeValues": false,
+          "shouldFormatInPercentage": false,
+          "hideTrailingZeros": true,
+          "prefix": "",
+          "suffix": "",
+          "showValue": true,
+          "showDisplayLabel": true,
+          "labelPosition": "BOTTOM",
+          "percentile": 50.0,
+          "isCustomPercentile": false,
+          "kpiTextAlign": "CENTER",
+          "kpiValueFontSizeMode": "RESPONSIVE",
+          "kpiValueFontSize": 32,
+          "responsiveTextAreaFill": 100,
+          "valueTextFormatting": {
+            "fontSize": 11,
+            "fontColor": "#333333",
+            "hasBackground": false,
+            "fontFamily": "SourceSansPro"
+          },
+          "labelTextFormatting": {
+            "fontSize": 15,
+            "fontColor": "#333333",
+            "hasBackground": false,
+            "fontFamily": "SourceSansPro"
+          },
+          "valuesInChartDisplayOptions": {
+            "displayValues": true,
+            "textFormatting": {
+              "fontSize": 11,
+              "fontColor": "AUTO",
+              "hasBackground": false,
+              "backgroundColor": "#D9D9D9BF"
+            },
+            "addDetails": false,
+            "additionalMeasures": [],
+            "placementMode": "AUTO",
+            "spacing": 2
+          },
+          "colorRules": []
+        }
+      ],
       "genericHierarchyDimension": [],
       "yHierarchyDimension": [],
       "xHierarchyDimension": [],
@@ -86,9 +177,11 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
+      "filters": [],
       "xAxisFormatting": {
         "displayAxis": true,
         "showAxisTitle": true,
+        "axisTitle": "Heure de la Journée",
         "axisTitleFormatting": {
           "fontSize": 15,
           "fontColor": "#333333",
@@ -115,6 +208,7 @@
           "mode": "INTERVAL"
         },
         "customExtent": {
+          "editMode": "AUTO",
           "manualExtent": [
             null,
             null
@@ -128,6 +222,7 @@
           "id": "y_left_0",
           "displayAxis": true,
           "showAxisTitle": true,
+          "axisTitle": "Nombre de Course",
           "axisTitleFormatting": {
             "fontSize": 15,
             "fontColor": "#333333",
@@ -154,6 +249,7 @@
             "mode": "INTERVAL"
           },
           "customExtent": {
+            "editMode": "AUTO",
             "manualExtent": [
               null,
               null
@@ -192,6 +288,7 @@
             "mode": "INTERVAL"
           },
           "customExtent": {
+            "editMode": "AUTO",
             "manualExtent": [
               null,
               null
@@ -228,7 +325,7 @@
       "hexbinNumber": 20,
       "hexbinRadiusMode": "NUM_HEXAGONS",
       "valuesInChartDisplayOptions": {
-        "displayValues": false,
+        "displayValues": true,
         "displayPieLabelsOrValues": true,
         "displayMode": "LABELS",
         "overlappingStrategy": "AUTO",
@@ -266,7 +363,7 @@
         "heatDensityMapIntensity": 0.5,
         "heatDensityMapRadius": 0.5,
         "singleColor": "#1f77b4",
-        "transparency": 0.75,
+        "transparency": 1.0,
         "colorPalette": "default_theme",
         "customPalette": {
           "id": "__dku_custom__",
@@ -275,12 +372,16 @@
           "values": [],
           "fixedValues": false
         },
-        "customColors": {}
+        "customColors": {
+          "m_null_COUNT_1": "#9C4259"
+        }
       },
+      "colorGroups": [],
       "bubblesOptions": {
         "defaultRadius": 5.0,
         "singleShape": "FILLED_CIRCLE"
       },
+      "computeMode": "NORMAL",
       "xAxisMode": "NORMAL",
       "yAxisMode": "NORMAL",
       "pieOptions": {
@@ -441,7 +542,7 @@
         "displayPointer": false
       },
       "useLiveProcessingIfAvailable": true,
-      "legendPlacement": "OUTER_RIGHT",
+      "legendPlacement": "INNER_TOP_RIGHT",
       "legendFormatting": {
         "fontSize": 11,
         "fontColor": "#333333",
@@ -527,7 +628,9 @@
         },
         "horizontal": {
           "show": false,
-          "displayAxis": {},
+          "displayAxis": {
+            "type": "LEFT_Y_AXIS"
+          },
           "lineFormatting": {
             "type": "FILLED",
             "color": "#d9d9d9",
