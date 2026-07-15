@@ -74,7 +74,7 @@
             "fontFamily": "SourceSansPro"
           },
           "labelTextFormatting": {
-            "fontSize": 24,
+            "fontSize": 20,
             "fontColor": "#333333",
             "hasBackground": false
           },
