@@ -141,14 +141,14 @@
           "rules": []
         },
         "samplingMethod": "TAIL_SEQUENTIAL",
-        "maxRecords": 143826,
+        "maxRecords": 3000000,
         "targetRatio": 0.02,
         "ascending": true,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1783981490621
+      "_refreshTrigger": 1784126584940
     },
     "vizSampling": {
       "selection": {
