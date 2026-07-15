@@ -15,7 +15,7 @@
           "enabled": false,
           "rules": []
         },
-        "samplingMethod": "HEAD_SEQUENTIAL",
+        "samplingMethod": "FULL",
         "maxRecords": 143826,
         "targetRatio": 0.02,
         "ascending": true,
@@ -23,7 +23,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "_refreshTrigger": 1784126884193
     },
     "def": {
       "id": "76748144",
@@ -58,6 +58,8 @@
             "label": "Natural ordering",
             "sortAscending": true
           },
+          "prefix": "",
+          "suffix": "",
           "multiplier": "Auto",
           "hideTrailingZeros": true,
           "digitGrouping": "DEFAULT",
