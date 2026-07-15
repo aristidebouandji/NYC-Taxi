@@ -2,13 +2,6 @@
   "type": "step_based",
   "name": "Auto_Refresh_NYC_Taxi",
   "active": false,
-  "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1784141171666
-  },
   "checklists": {
     "checklists": []
   },
@@ -21,7 +14,32 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "set_project_vars_Limite_lignes",
+        "type": "set_project_vars",
+        "name": "limite_lignes",
+        "enabled": true,
+        "comment": "Cette étape de scenario permet de changer la limite de la base de données depuis Postgresql afin de voir les modifications dans le dashboard",
+        "alwaysShowComment": false,
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 3,
+        "maxRetriesOnFail": 1,
+        "params": {
+          "variables": {
+            "Limite_lignes": 300000
+          },
+          "definitions": [],
+          "evaluateValues": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {},
