@@ -29,7 +29,7 @@
       "id": "3ac5a602",
       "type": "scatter",
       "variant": "normal",
-      "name": "Distance (Miles) vs Durée (Minutes)",
+      "name": "Durée (Minutes) vs Distance (Miles)",
       "userEditedName": false,
       "displayWithEChartsByDefault": true,
       "genericDimension0": [],
@@ -46,7 +46,7 @@
       "yDimension": [],
       "uaXDimension": [
         {
-          "column": "Distance (Miles)",
+          "column": "Durée (Minutes)",
           "type": "NUMERICAL",
           "treatAsAlphanum": false,
           "sortBy": "NATURAL",
@@ -56,14 +56,12 @@
           "digitGrouping": "DEFAULT",
           "useParenthesesForNegativeValues": false,
           "shouldFormatInPercentage": false,
-          "hideTrailingZeros": true,
-          "prefix": "",
-          "suffix": ""
+          "hideTrailingZeros": true
         }
       ],
       "uaYDimension": [
         {
-          "column": "Durée (Minutes)",
+          "column": "Distance (Miles)",
           "type": "NUMERICAL",
           "treatAsAlphanum": false,
           "sortBy": "NATURAL",
@@ -335,12 +333,12 @@
       },
       "scatterZoomOptions": {
         "scale": [
-          1.0,
-          1.0
+          1.0526852016443033,
+          1.0526852016443033
         ],
         "translate": [
-          0.0,
-          0.0
+          -9.248143690489712,
+          -0.9316331538443059
         ],
         "xRange": [
           0.0,
@@ -758,7 +756,7 @@
   },
   "owner": "admin",
   "listed": false,
-  "name": "Distance (Miles) vs Durée (Minutes) on nyc_taxi_original_prepared",
+  "name": "Durée (Minutes) vs Distance (Miles) on nyc_taxi_original_prepared",
   "dashboardCreationId": "y2tkOMz",
   "creationTag": {
     "versionNumber": 0,
