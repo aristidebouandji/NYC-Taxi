@@ -38,6 +38,37 @@
           "definitions": [],
           "evaluateValues": false
         }
+      },
+      {
+        "id": "build_1_true_d_nyc_taxi_original_prepared",
+        "type": "build_flowitem",
+        "name": "Construire",
+        "enabled": true,
+        "alwaysShowComment": false,
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 3,
+        "maxRetriesOnFail": 1,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "nyc_taxi_original_prepared",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
+          "autoUpdateSchemaBeforeEachRecipeRun": false,
+          "stopAtFlowZoneBoundary": false,
+          "refreshHiveMetastore": true,
+          "handleWarningsAs": "WARNING",
+          "proceedOnFailure": false
+        }
       }
     ]
   },
