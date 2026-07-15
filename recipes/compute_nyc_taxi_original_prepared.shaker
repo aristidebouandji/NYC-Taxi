@@ -510,7 +510,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
@@ -518,6 +518,42 @@
         "expression": "datePart(val(\"Date Heure Depart\"), \"weekDay\")",
         "column": "JourSemaine",
         "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "useDatasetForMapping": false,
+        "mapping": [
+          {
+            "from": "1",
+            "to": "Carte bancaire"
+          },
+          {
+            "from": "2",
+            "to": "Espèce"
+          },
+          {
+            "from": "3",
+            "to": "Paiement Mobile"
+          },
+          {
+            "from": "4",
+            "to": "Autre"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "Type Paiement"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
       },
       "alwaysShowComment": false
     }
