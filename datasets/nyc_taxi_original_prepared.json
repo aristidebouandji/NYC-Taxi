@@ -75,7 +75,7 @@
       {"name":"Code Tarif ID","type":"bigint"},
       {"name":"Zone Départ ID","type":"bigint"},
       {"name":"Zone Arrivée ID","type":"bigint"},
-      {"name":"Type Paiement","type":"bigint"},
+      {"name":"Type Paiement","type":"string"},
       {"name":"Prix Course Base","type":"double"},
       {"name":"Supplément","type":"double"},
       {"name":"Montant Pourboire","type":"double"},
