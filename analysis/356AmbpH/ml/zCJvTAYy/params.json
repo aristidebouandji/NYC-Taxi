@@ -2251,7 +2251,7 @@
       "early_stopping_rounds": 4,
       "tweedie_variance_power": 1.5,
       "allow_sparse_matrices": true,
-      "enabled": false
+      "enabled": true
     },
     "deep_neural_network_regression": {
       "learning_rate": {
