@@ -372,7 +372,7 @@
         "generate_derivative": false,
         "numerical_handling": "REGULAR",
         "missing_handling": "IMPUTE",
-        "missing_impute_with": "MEAN",
+        "missing_impute_with": "MEDIAN",
         "impute_constant_value": 0.0,
         "keep_regular": false,
         "rescaling": "AVGSTD",
@@ -384,7 +384,7 @@
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning"
         },
