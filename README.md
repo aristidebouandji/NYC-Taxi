@@ -22,6 +22,10 @@ L'architecture du projet applique les meilleures pratiques de développement et 
 3. **Qualité de Données (Data Quality) :** Intégration de règles de validation automatiques (`Checks`) sur les indicateurs de volume et de cohérence des montants.
 4. **Restitution (Analytics Dashboard) :** Dashboard interactif en 3 volets distincts (Performance financière, Efficacité opérationnelle, Comportement des passagers).
 
+
+![Mon Flow Dataiku DSS](Flow_prepared.png)
+
+
 ---
 
 ## 🔄 Automatisation & DataOps (Le Scénario Maître)
