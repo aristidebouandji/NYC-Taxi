@@ -22,7 +22,7 @@ L'architecture du projet applique les meilleures pratiques de développement et 
 3. **Qualité de Données (Data Quality) :** Intégration de règles de validation automatiques (`Checks`) sur les indicateurs de volume et de cohérence des montants.
 4. **Restitution (Analytics Dashboard) :** Dashboard interactif en 3 volets distincts (Performance financière, Efficacité opérationnelle, Comportement des passagers).
 
-
+![Connexion Postgresql](Connexion_Postgresql.png)
 ![Mon Flow Dataiku DSS](Flow_prepared.png)
 
 
@@ -36,6 +36,11 @@ Pour rendre ce projet **Production-Ready**, un scénario d'automatisation comple
 * **Étape 2 : Reconstruction forcée (`Build`)** ➡️ Dataiku interroge PostgreSQL avec la nouvelle limite et recalcule de façon robuste l'ensemble des recettes.
 * **Étape 3 : Contrôle Qualité (`Compute metrics`)** ➡️ Exécution de notre règle de qualité `Record count > 1` pour lever une alerte de sécurité avant la livraison des chiffres.
 
+![Variable Scenario](Variable_scenario.png)
+![Exécution Scénario](Execute_all.png)
+
+![Data Quality](Data_Quality.png)
+
 ---
 
 ## 📊 Business Insights (Dashboard 3 Pages)
@@ -43,17 +48,27 @@ Pour rendre ce projet **Production-Ready**, un scénario d'automatisation comple
 Le dashboard interactif final fournit des indicateurs clés d'aide à la décision :
 
 ### 💳 1. Performance Financière
-* **Volume d’Affaires analysé :** $3,91 Millions de dollars générés par l'échantillon.
-* **Régression Linéaire :** Modélisation de l'évolution des pourboires selon le prix de base de la course ($y = 2.7x + 7.71$). 
-* **Optimisation :** Identification d'une opportunité business majeure sur les transferts aéroportuaires ($18.31k$ de frais aéroport).
+* **Volume d’Affaires analysé :** $7,88 Millions de dollars générés par l'échantillon.
+* **Régression Linéaire :** Modélisation de l'évolution des pourboires selon le prix de base de la course ($y = 2.7x + 8.36$). 
+* **Optimisation :** Identification d'une opportunité business majeure sur les transferts aéroportuaires ($40.42k$ de frais aéroport).
+
+![Page1](DB_1.1.png)
+![Page2](DB_1.2.png)
 
 ### 🚦 2. Efficacité Opérationnelle
-* **Saturation Routière :** Analyse de l'impact de la congestion urbaine mettant en évidence une vitesse de circulation moyenne bloquée à **11 mph** (environ 17,7 km/h) sur l'ensemble de la ville.
+* **Saturation Routière :** Analyse de l'impact de la congestion urbaine mettant en évidence une vitesse de circulation moyenne bloquée à **12 mph** (environ 18,7 km/h) sur l'ensemble de la ville.
 * **Heures de pointe :** Graphique temporel montrant l'effondrement de moitié de la vitesse moyenne de jour face aux trajets de nuit.
 
+![Dashboard](DB_2.1.png)
+![Dashboard](DB_2.2.png)
+
 ### 👥 3. Passagers & Moyens de Paiement
-* **Habitudes de paiement :** Preuve d'une dématérialisation quasi-totale des règlements avec une écrasante majorité pour la **Carte bancaire (87.01 %)** par rapport aux Espèces (11.5 %).
-* **Impact Marketing :** L'usage massif des terminaux électroniques porte le taux moyen des pourboires à un niveau exceptionnel de **23.62 %** grâce aux suggestions de dons automatiques.
+* **Habitudes de paiement :** Preuve d'une dématérialisation quasi-totale des règlements avec une écrasante majorité pour la **Carte bancaire (86.02 %)** par rapport aux Espèces (12.41 %).
+* **Impact Marketing :** L'usage massif des terminaux électroniques porte le taux moyen des pourboires à un niveau exceptionnel de **22.27 %** grâce aux suggestions de dons automatiques.
+
+![Page3](DB_3.1.png)
+
+![Page3](DB_3.2.png)
 
 ---
 
