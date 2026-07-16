@@ -85,7 +85,7 @@
       {"name":"Surcharge Congestion","type":"double"},
       {"name":"Frais Aéroport","type":"double"},
       {"name":"Frais Zone Congestion","type":"double"},
-      {"name":"prediction","type":"float"}
+      {"name":"Prédiction Final","type":"double"}
     ],
     "userModified": true
   },
