@@ -63,7 +63,29 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"Fournisseur ID","type":"string"},
+      {"name":"Date Heure Depart","type":"datetimenotz"},
+      {"name":"JourSemaine","type":"string"},
+      {"name":"Date Heure Arrivée","type":"datetimenotz"},
+      {"name":"Durée (Minutes)","type":"bigint"},
+      {"name":"Nombre Passager","type":"bigint"},
+      {"name":"Distance (Miles)","type":"double"},
+      {"name":"Vitesse Moyenne (Milles/H)","type":"double"},
+      {"name":"Code Tarif ID","type":"bigint"},
+      {"name":"Zone Départ ID","type":"bigint"},
+      {"name":"Zone Arrivée ID","type":"bigint"},
+      {"name":"Type Paiement","type":"string"},
+      {"name":"Prix Course Base","type":"double"},
+      {"name":"Supplément","type":"double"},
+      {"name":"Montant Pourboire","type":"double"},
+      {"name":"Ration Pourboire (%)","type":"double"},
+      {"name":"Montant Péages","type":"double"},
+      {"name":"Montant Total","type":"double"},
+      {"name":"Surcharge Congestion","type":"double"},
+      {"name":"Frais Aéroport","type":"double"},
+      {"name":"Frais Zone Congestion","type":"double"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
