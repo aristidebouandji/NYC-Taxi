@@ -88,7 +88,7 @@
       },
       {
         "d": true,
-        "name": "prediction"
+        "name": "Prédiction Final"
       }
     ]
   },
@@ -126,14 +126,44 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "",
-        "column": "formula_result",
+        "expression": "max(0, prediction)",
+        "column": "Prédiction Final",
         "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RoundProcessor",
+      "params": {
+        "mode": "ROUND",
+        "places": 2,
+        "columns": [
+          "Prédiction Final"
+        ],
+        "precision": 0,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "prediction"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
@@ -176,6 +206,7 @@
     "Prix Course Base": 135,
     "Zone Départ ID": 120,
     "Montant Total": 134,
+    "Prédiction Final": 135,
     "Nombre Passager": 128,
     "JourSemaine": 100,
     "Vitesse Moyenne (Milles/H)": 210,
