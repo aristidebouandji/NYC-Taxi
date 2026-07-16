@@ -1,6 +1,96 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "Fournisseur ID"
+      },
+      {
+        "d": true,
+        "name": "Date Heure Depart"
+      },
+      {
+        "d": true,
+        "name": "JourSemaine"
+      },
+      {
+        "d": true,
+        "name": "Date Heure Arrivée"
+      },
+      {
+        "d": true,
+        "name": "Durée (Minutes)"
+      },
+      {
+        "d": true,
+        "name": "Nombre Passager"
+      },
+      {
+        "d": true,
+        "name": "Distance (Miles)"
+      },
+      {
+        "d": true,
+        "name": "Vitesse Moyenne (Milles/H)"
+      },
+      {
+        "d": true,
+        "name": "Code Tarif ID"
+      },
+      {
+        "d": true,
+        "name": "Zone Départ ID"
+      },
+      {
+        "d": true,
+        "name": "Zone Arrivée ID"
+      },
+      {
+        "d": true,
+        "name": "Type Paiement"
+      },
+      {
+        "d": true,
+        "name": "Prix Course Base"
+      },
+      {
+        "d": true,
+        "name": "Supplément"
+      },
+      {
+        "d": true,
+        "name": "Montant Pourboire"
+      },
+      {
+        "d": true,
+        "name": "Ration Pourboire (%)"
+      },
+      {
+        "d": true,
+        "name": "Montant Péages"
+      },
+      {
+        "d": true,
+        "name": "Montant Total"
+      },
+      {
+        "d": true,
+        "name": "Surcharge Congestion"
+      },
+      {
+        "d": true,
+        "name": "Frais Aéroport"
+      },
+      {
+        "d": true,
+        "name": "Frais Zone Congestion"
+      },
+      {
+        "d": true,
+        "name": "prediction"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +120,24 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "",
+        "column": "formula_result",
+        "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -59,7 +165,30 @@
   },
   "analysisColumnData": {},
   "flagNumericValues": true,
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Code Tarif ID": 113,
+    "Date Heure Depart": 176,
+    "Durée (Minutes)": 128,
+    "Type Paiement": 113,
+    "Montant Péages": 134,
+    "Date Heure Arrivée": 176,
+    "Ration Pourboire (%)": 165,
+    "Prix Course Base": 135,
+    "Zone Départ ID": 120,
+    "Montant Total": 134,
+    "Nombre Passager": 128,
+    "JourSemaine": 100,
+    "Vitesse Moyenne (Milles/H)": 210,
+    "Fournisseur ID": 148,
+    "Montant Pourboire": 143,
+    "Supplément": 134,
+    "prediction": 134,
+    "Surcharge Congestion": 165,
+    "Zone Arrivée ID": 128,
+    "Frais Zone Congestion": 173,
+    "Distance (Miles)": 135,
+    "Frais Aéroport": 134
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
